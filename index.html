@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="96x96" href="/Image/go_horse_ploces.png">
+  <title>Cadastro de Contatos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro de Contatos</h1>
+  <div class="form-container">
+    <form id="contactForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required placeholder="Ex: Gleybson Hora">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Ex: fulano@gmail.com">
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,11}"  placeholder="Ex: 82987654321">
+
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+
+  <h2>Lista de Contatos</h2>
+  <div class="table-container">
+    <table id="contactTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  
+  <footer>
+    <p>© Gleybson e João</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
